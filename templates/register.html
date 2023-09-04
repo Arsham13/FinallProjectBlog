@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="AS">
+    <span>A</span>
+    <span>R</span>
+    <span>S</span>
+    <span>H</span>
+    <span>A</span>
+    <span>M</span>
+</div>
+<link rel="stylesheet" href="static/main2.css" />
+<h1>Welcome to my website</h1>
+<form method="POST" action="">
+{{form.hidden_tag()}}
+{{form.name}}
+{{form.username(class_="register-username")}}
+{{form.password()}}
+{{form.submit(class_="register-submit")}}
+</form>
+
+{% for field, errors in form.errors.items() %}
+    <div class="alert alert-error">
+        {{ form[field].label }}: {{ ', '.join(errors) }}
+    </div>
+{% endfor %}
+
+<p>Are you have any acount?</p><a href="{{url_for('login')}}">Login</a>
+{% endblock %}

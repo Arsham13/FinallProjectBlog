@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+{% block content %}
+<div class="AS">
+    <span>A</span>
+    <span>R</span>
+    <span>S</span>
+    <span>H</span>
+    <span>A</span>
+    <span>M</span>
+</div>
+<link rel="stylesheet" href="{{url_for('static', filename='main4.css')}}">
+<div class="topnav">
+    <a href="{{url_for('index')}}">Home</a>
+    <a class="toolb" href="{{url_for('about')}}">About Us</a>
+</div>
+<h1>Welcome back <h1><b>{{user.username}}</b></h1></h1>
+<form method="POST" action="" enctype="multipart/form-data"></form>
+{% for post in posts %}
+    <h2>{{post.title}}</h2>
+    <i>{{post.author.name}}</i>
+    <p>{% for tag in post.labels %}<a class="tagss" href="/tag/{{tag.name}}">{{tag.name}}      </a>{% endfor %}</p>
+    {% if post.image %}
+        <img src="static/pictures/{{post.image}}" >
+    {% endif %}
+
+    {% if post.video %}
+    <video width="500px" height="500px" controls="controls">
+        <source src="vid.mp4" type="video/mp4" />
+    </video>
+    {% endif %}
+    <p>{{post.content}}</p>
+
+    <p> </p>
+    <a class="delete" href="/delete/{{post.id}}">Delete</a>
+    <a class="edit" href="/edit/{{post.id}}">Edit Post</a>
+    <hr>
+    <hr>
+{% endfor %}
+<a class="new_post" href="{{url_for('new_post')}}">Create New Post</a>
+<br>
+<a class="logout" href="{{url_for('logout')}}">logout</a>
+{% endblock %}

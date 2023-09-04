@@ -1,0 +1,270 @@
+a.delete{
+    white-space: pre-wrap;
+}
+a>img{
+    margin-left: 950px
+}
+::selection {
+    color: white;
+    background: purple;
+  }
+  html{
+    color: white;
+    background-image: url("blackback.jpeg")
+}
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.tagss:link{
+  color: #0099ff;
+  text-decoration: none;
+  white-space:pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+.tagss:visited{
+  color: #0099ff;
+  text-decoration: none;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+.tagss:hover{
+  color: #0099ff;
+  text-decoration: underline;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+.tagss:active{
+  text-decoration: underline;
+  white-space: pre-wrap;
+  color: rgb(237, 199, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+i{
+    color: rgb(237, 199, 255);
+}
+.new_post:link, .new_post:visited{
+    background-color: rgb(255, 255, 100);
+    color: black;
+    padding: 7px 12px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.15px solid white;
+    text-align: left;
+    font-family:sans-serif
+    
+}
+.new_post:hover, .new_post:active {
+    background-color: yellow;
+    font-family:sans-serif
+  }
+
+.logout:link, .logout:visited{
+    background-color: rgb(255, 59, 59);
+    color: black;
+    padding: 7px 12px;
+    text-decoration: none;
+    border: 0.15px solid white;
+    font-family:sans-serif
+}
+.logout:hover, .logout:active {
+    background-color: red;
+    font-family:sans-serif
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 2px;
+    padding: 6px;
+}
+hr{
+  border: 1px dashed rgb(255, 0, 200);
+}
+hr+hr{
+  border: 1.5px dotted rgb(0, 245, 245);
+}
+.edit:link, .edit:visited{
+  color: black;
+  background-color: white;
+  border : 3px solid rgb(221, 83, 255);
+  padding: 2px 3px;
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.edit:hover {
+  color:black;
+  background-color: rgb(221, 83, 255);
+  border : 3px solid rgb(221, 83, 255);
+  padding: 2px 3px;
+  text-decoration: none;
+}
+.edit:active {
+  color: white;
+  background-color: black;
+  border : 3px solid black;
+  text-decoration: none;
+}
+
+.delete:link, .delete:visited{
+  color: black;
+  background-color: white;
+  border : 3px solid rgb(221, 83, 255);
+  padding: 2px 3px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 3px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.delete:hover {
+  color:black;
+  background-color: rgb(221, 83, 255);
+  border : 3px solid rgb(221, 83, 255);
+  padding: 2px 3px;
+  text-decoration: none;
+}
+.delete:active {
+  color: white;
+  background-color: black;
+  border : 3px solid black;
+  text-decoration: none;
+}
+h1>b{
+  font-family:cursive
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #c9c9c9;
+  color: rgb(212, 0, 255);
+}
+
+.topnav a:active{
+  background-color: #aa048e;
+  color: white;
+}
+
+.AS {
+  height: 100px;
+}
+
+.AS span {
+  position: relative;
+  top: 10px;
+  margin-bottom: 12.75px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family: 'Titan One'cursive;
+  font-size: 5px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgb(255, 230, 0),
+      0 2px 0 rgb(195, 0, 255),
+      0 3px 0 rgb(195, 0, 255),
+      0 4px 0 rgb(195, 0, 255),
+      0 5px 0 rgb(195, 0, 255),
+      0 6px 0 transparent,
+      0 7px 0 transparent,
+      0 8px 0 transparent,
+      0 9px 0 transparent,
+      0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.AS span:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.AS span:nth-child(3) {
+  animation-delay: .2s;
+}
+
+.AS span:nth-child(4) {
+  animation-delay: .3s;
+}
+
+.AS span:nth-child(5) {
+  animation-delay: .4s;
+}
+
+.AS span:nth-child(6) {
+  animation-delay: .5s;
+}
+
+.AS span:nth-child(7) {
+  animation-delay: .6s;
+}
+
+.AS span:nth-child(8) {
+  animation-delay: .7s;
+}
+
+@keyframes bounce {
+  100% {
+      top: -1px;
+      text-shadow: 0 1px 0 #CCC,
+          0 2px 0 #CCC,
+          0 3px 0 #CCC,
+          0 4px 0 #CCC,
+          0 5px 0 #CCC,
+          0 6px 0 #CCC,
+          0 7px 0 #CCC,
+          0 8px 0 #CCC,
+          0 9px 0 #CCC,
+          0 50px 25px rgba(255, 255, 255, 0.2);
+  }
+}
+.AS {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 253, 253, 0);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(68, 68, 68); 
+  border-radius: 3px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 115, 167); 
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(158, 97, 167); 
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(153, 51, 167); 
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+
+::-webkit-scrollbar:active {
+  width: 10px;
+}

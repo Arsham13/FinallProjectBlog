@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock %}
+
+<head>
+    <div id="navbar" class="topnav">
+        <a class="toolb" href="{{url_for('index')}}">Home</a>
+        <a class="toolb" href="{{url_for('login')}}">Login</a>
+        <a class="toolb" href="{{url_for('register')}}">Register</a>
+        <a class="toolb" href="{{url_for('about')}}">About Us</a>
+    </div>
+</head>
+{% block content %} 
+<div class="AS">
+    <span>A</span>
+    <span>R</span>
+    <span>S</span>
+    <span>H</span>
+    <span>A</span>
+    <span>M</span>
+</div>
+
+<link rel="stylesheet" href="{{url_for('static', filename='main3.css')}}">
+<div id="navbar" class="topnav">
+    <a class="toolb" href="{{url_for('index')}}">Home</a>
+    <a class="toolb" href="{{url_for('login')}}">Login</a>
+    <a class="toolb" href="{{url_for('register')}}">Register</a>
+    <a class="toolb" href="{{url_for('about')}}">About Us</a>
+</div>
+<div class="geeks">
+    
+        <span>W</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e  </span> <span></span><span>t</span><span>o  </span><span> </span><span>W</span><span>E</span><span>B</span><span>m</span><span>e</span>
+    
+
+</div>
+{% for post in posts %}
+<h2>{{post.title}}</h2>
+<i><a href="/by/{{post.author.id}}">{{post.author.name}}</a></i>
+<p>{% for tag in post.labels %},<b><a class="tagss" href="/tag/{{tag.name}}">{{tag.name}}      </a></b>{% endfor %}</p>
+{% if post.image %}
+<img src="static/pictures/{{post.image}}" />
+{% endif %}
+<p>{{post.content}}</p>
+<hr>
+<hr>
+
+{% endfor %}
+<div class="textc">    
+    <p>Contact Us</p>
+    <li>09945933373</li>
+    <li>09945667780</li>
+    <br>
+    <p>Email</p>
+    <li>arshamseraji@gmail.com</li>
+    <p>Related websites</p>
+    <li><a class="RW" href="https://iranedu.firaworldcup.org/">https://iranedu.firaworldcup.org/</a></li>
+    <li><a class="RW" href="https://medu.ir/">https://medu.ir/</a></li>
+</div>
+
+
+{% endblock %}

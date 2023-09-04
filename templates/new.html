@@ -1,0 +1,31 @@
+{%extends 'base.html' %}
+
+{% block title %}New Post{% endblock %}
+{% block content %}
+<div class="AS">
+    <span>A</span>
+    <span>R</span>
+    <span>S</span>
+    <span>H</span>
+    <span>A</span>
+    <span>M</span>
+</div>
+<link rel="stylesheet" href="{{url_for('static', filename='main5.css')}}">
+<h1>Create New Post!</h1>
+<form method="POST" action="" enctype="multipart/form-data">
+{{form.hidden_tag()}}
+<p>Post Title:</p>
+{{form.title(class_="new-input")}}
+<p>Tags</p>
+{{form.tags(class_="new-input")}}
+<p>Content</p>
+{{form.content(class_="new-input")}}
+<br>
+<p>Picture</p>
+{{form.picture(class_="new-file")}}
+<p> </p>
+{{form.submit(class_="new-submit")}}
+</form>
+<br>
+<a href="{{url_for('dashboard')}}">Return to the «Dashboard» page</a>
+{% endblock %}

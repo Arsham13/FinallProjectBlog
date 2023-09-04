@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+
+{%block title%}Edit{%endblock%}
+
+{%block content%}
+<div class="AS">
+    <span>A</span>
+    <span>R</span>
+    <span>S</span>
+    <span>H</span>
+    <span>A</span>
+    <span>M</span>
+</div>
+<link rel="stylesheet" href="{{url_for('static', filename='main5.css')}}">
+<h1>Edit Post</h1>
+<form action="/edit/{{post.id}}" method="POST" enctype="multipart/form-data">
+    {{form.hidden_tag()}}
+    <p>Post Title:</p>
+    {{form.title(class_="new-input")}}
+    <p>Content</p>
+    {{form.content(class_="new-input")}}
+    <br>
+    <p> </p>
+    {{form.submit2(class_="new-submit")}}
+</form>
+{%endblock%}
